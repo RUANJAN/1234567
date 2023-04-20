@@ -7,7 +7,7 @@ class Window(tk.Tk):
     def __init__(self):
         super().__init__()
         self.option_add('*font',('verdana', 12, 'bold'))
-        self.title("lesson2_2")
+        self.title("碳排放量")
 
         Button(self, text='石油').pack(side=LEFT)
         Button(self, text='煤炭').pack(side=LEFT)
