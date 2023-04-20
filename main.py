@@ -6,19 +6,16 @@ from datasoerce import CarbonFootPrint
 class Window(tk.Tk):
     def __init__(self):
         super().__init__()
-        root = tk.Tk()
-        root.title('碳排放的窗口')
-        root.geometry('200x200')
+        self.option_add('*font',('verdana', 12, 'bold'))
+        self.title("lesson2_2")
 
-        btn = tk.Button(root,
-                        text='石油',
-                        font=('Arial', 30, 'bold'),
-                        padx=10,
-                        pady=10,
-                        activeforeground='#f00'
-                        )
+        Button(self, text='石油').pack(side=LEFT)
+        Button(self, text='煤炭').pack(side=LEFT)
+        Button(self, text='天然氣').pack(side=LEFT)
 
-        root.mainloop()
+if __name__ == "__main__":
+    window = Window()
+    window.mainloop()
     '''
 娟娟的按鈕
 '''
